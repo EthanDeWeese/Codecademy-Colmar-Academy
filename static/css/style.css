@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red !important;
-}
+} */
 
 body {
     background-color: grey;
@@ -8,13 +8,19 @@ body {
     font-size: 16px;
 }
 
-.desktop-spacing {
-    display: none;
+em {
+    font-weight: bold;
+
 }
+
 
 /* ---------- Header ---------- */
 
-.mobile-spacing {
+.desktop {
+    display: none;
+}
+
+.header {
     height: 64px;
     width: 100%;
     position: sticky;
@@ -27,58 +33,57 @@ body {
     background-color: white;
 }
 
-#mobile-nav {
+.mobile-nav {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     align-content: center;
     margin: auto;
 }
 
-#mobile-nav img {
+.mobile-nav img {
     height: 32px;
 }
 
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 720px) {
 
-    .mobile-spacing {
+    .mobile-nav {
         display: none;
     }
 
-    .desktop-spacing {
-        height: 64px;
-        width: 100%;
-        position: sticky;
-        top: 0;
-
-        width: 100%;
+    .desktop {
         display: inline-flex;
-        justify-content: space-between;
-
-        background-color: white;
     }
 
-    #desktop-part-one {
+    .desktop img {
+        margin: auto;
+        margin-left: 24px;
+        height: 50px;
+    }
+
+    #desktop-text {
         width: fit-content;
-        display: inline-flex;]
+        height: fit-content;
+        margin: auto;
+        margin-left: 4px;
+
+        font-size: 1.5rem;
+        text-align: left;
+        color: grey;
     }
-    #desktop-nav {
+
+    #desktop-text em {
+        color: black;
+    }
+
+    .desktop-nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-right: 8px;
     }
 
-    #desktop-text {
-        width: fit-content;
-        height: fit-content;
-        margin: auto 16px auto 18px;
-        font-size: 1.5rem;
-        text-align: left;
-
-    }
-
-    #desktop-nav li {
+    .desktop-nav li {
         margin: 16px;
     }
 }

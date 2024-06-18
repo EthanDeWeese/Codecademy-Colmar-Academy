@@ -22,7 +22,6 @@
         <![endif]-->
 
     <header class="header">
-
         <div class=" desktop desktop-part-one">
             <img id="desktop-logo" src="static/images/ic-logo-cropped.svg" alt="Colmar Academy">
             <p id="desktop-text"><em>COLMAR</em> ACADEMY</p>
@@ -41,11 +40,13 @@
             <li><a href=""><img src="static/images/ic-online.svg" alt="Colmar Academy"></a></li>
             <li><a href=""><img src="static/images/ic-login.svg" alt="Colmar Academy"></a></li>
         </ul>
-
     </header>
 
     <section class="learn-something">
-        <img src="static/images/banner.jpg" alt="students sitting at table">
+        <div class="learn-something-image">
+            <img src="static/images/banner.jpg" alt="students sitting at table">
+        </div>
+
         <div class="learn-something-text">
             <h2>Learn something new everyday</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -53,6 +54,60 @@
         </div>
     </section>
 
+    <section class="more-info">
+        <div class="desktop-info">
+            <img src="static/images/information-main.jpg" alt="man reading book">
+
+            <div class="desktop-info-text">
+                <h2>It doesn't hurt to keep practicing</h2>
+                <p id="desktop-quote">"Curabitur Vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                    nec
+                    consequat neque. Sed non accumsan urna. Phasellus sed consequant ex. Etiam eqet magna laoreet,
+                    efficitur
+                    dolor consequat, tristique ligula.
+                </p>
+                <p id="desktop-quote-author">Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="info">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="static/images/information-orientation-mobile.jpg">
+                    <img src="static/images/information-orientation.jpg" alt="students walking on path">
+                </picture>
+                <div class="info-text">
+                    <h3>Orientation date</h3>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+
+            <div class="info">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="static/images/information-campus-mobile.jpg">
+                    <img src="static/images/information-campus.jpg" alt="campus room">
+                </picture>
+                <div class="info-text">
+                    <h3>Our campus</h3>
+                    <p>Find which campus is close by you</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+
+            <div class="info">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="static/images/information-guest-lecture-mobile.jpg">
+                    <img src="static/images/information-guest-lecture.jpg" alt="Oliver Sack">
+                </picture>
+                <div class="info-text">
+                    <h3>Guest lecture</h3>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="" async defer></script>
 </body>

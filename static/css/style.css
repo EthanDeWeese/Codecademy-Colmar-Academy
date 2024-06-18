@@ -6,6 +6,8 @@ body {
     background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+
+    color: hsl(0, 0%, 25%);
 }
 
 em {
@@ -13,6 +15,15 @@ em {
 
 }
 
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
 /* ---------- Header ---------- */
 
@@ -93,19 +104,14 @@ em {
 .learn-something {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     font-weight: bold;
     font-size: 2rem;
 
-    color: hsl(0, 0%, 25%);
-
     background-color: hsl(0, 0%, 75%);
 }
 
-.learn-something img {
-    width: 100%;
-}
 
 .learn-something-text {
     display: flex;
@@ -125,7 +131,7 @@ em {
     margin: 24px 16px;
 }
 
-.learn-something a {
+.learn-something-text a {
     text-align: center;
 
     padding: 12px;
@@ -141,18 +147,33 @@ em {
         flex-direction: row;
     }
 
-    .learn-something img {
-        display: block;
-        object-fit: cover;
+    .learn-something-image {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
         width: 60%;
+        margin: 24px;
+    }
+
+    .learn-something img {
+        width: 100%;
         max-width: 1000px;
-        height: auto;
-        margin: 32px 24px;
+
     }
 
     .learn-something-text {
         justify-content: center;
-        max-width: 500px;
+        width: 40%;
+        min-width: 40%;
+    }
+
+    .learn-something-text h2,
+    p,
+    a {
+        width: 80%;
+        max-width: 550px;
+
     }
 }
 
@@ -165,5 +186,147 @@ em {
 
     .learn-something h2 {
         font-size: 2.5rem;
+    }
+}
+
+/* ---------- more information ---------- */
+
+.more-info {
+    display: flex;
+    justify-content: center;
+
+    background-color: hsl(0, 0%, 90%);
+    ;
+}
+
+.desktop-info {
+    display: none;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 16px;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info a,
+p {
+    margin: 8px 0;
+}
+
+.info a {
+    color: rgb(0, 92, 230);
+}
+
+.info h3 {
+    margin: 16px 16px 16px 0;
+}
+
+@media screen and (min-width: 720px) {
+    .desktop-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 60%;
+        margin: 24px;
+    }
+
+    .desktop-info img {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+
+    .infos {
+        width: 40%;
+        min-width: 40%;
+        align-items: baseline;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .info img {
+        margin: 16px;
+        width: fit-content;
+        max-height: 200px;
+    }
+
+    .desktop-info-text {
+        display: flex;
+        flex-direction: column;
+
+        align-content: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .desktop-info-text h2 {
+        margin: 32px 0 24px 0;
+    }
+
+    #desktop-quote {
+        font-size: 1.5rem;
+        font-weight: lighter;
+
+        width: 100%;
+        max-width: 1000px;
+
+        margin: 24px 0;
+
+    }
+
+    #desktop-quote-author {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+
+    .desktop-info img {
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    .info {
+        flex-direction: column;
+        margin: 0 16px;
+    }
+
+    .info img {
+        margin: 8px 0;
+        width: fit-content;
+        max-height: 150px;
+    }
+
+    .info h3 {
+        margin: 0px;
+    }
+
+    .desktop-info-text h2 {
+        font-size: 2.5rem;
+    }
+
+    #desktop-quote {
+        font-size: 1rem;
+    }
+
+    #desktop-quote-author {
+        font-size: 1.25rem;
     }
 }

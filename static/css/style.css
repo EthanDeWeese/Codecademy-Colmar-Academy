@@ -159,6 +159,8 @@ h3 {
     .learn-something img {
         width: 100%;
         max-width: 1000px;
+        height: 100%;
+        object-fit: cover;
 
     }
 
@@ -303,6 +305,9 @@ p {
         object-fit: cover;
     }
     
+    .infos {
+        margin-top: 16px;;
+    }
     .info {
         flex-direction: column;
         margin: 0 16px;

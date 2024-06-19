@@ -175,8 +175,8 @@ h3 {
     }
 
     .learn-something-text h2,
-    .learn-something-textp,
-    .learn-something-texta {
+    .learn-something-text p,
+    .learn-something-text a {
         width: 80%;
         max-width: 550px;
 
@@ -351,7 +351,7 @@ h3 {
 
 .start-learning h2 {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 
 .grid-container {
@@ -430,6 +430,81 @@ h3 {
 
 @media screen and (min-width: 1350px) {
     .grid-container {
-        grid-template: 1fr 1fr / 1fr  1fr 1fr;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+}
+
+/* ---------- thesis exhibit ---------- */
+
+.thesis {
+    background-color: hsl(0, 0%, 90%);
+    padding-top: 32px;
+}
+
+.thesis h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.thesis video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-video h3,
+.thesis-video p {
+    display: none;
+}
+
+.thesis-cards {
+    display: none;
+}
+
+@media screen and (min-width: 1300px) {
+
+    .thesis-video h3,
+    .thesis-video p {
+        display: block;
+        margin: 24px 0;
+    }
+
+    .thesis-flex {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .thesis-video {
+        width: 60%;
+        max-width: 1000px;
+        margin: 0 24px;
+    }
+
+    .thesis-video video {
+        align-self: right;
+        width: 100%;
+        height: auto;
+    }
+
+    .thesis-cards {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        min-width: 40%;
+    }
+
+    .thesis-card {
+        display: flex;
+        width: fit-content;
+        margin: 0 24px 24px 24px;
+    }
+
+    .thesis-card img {
+        max-width: 200px;
+    }
+
+    .thesis-card h3, .thesis-card p {
+        margin: 16px;
+        margin-top: 0px;
     }
 }

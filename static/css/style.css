@@ -121,6 +121,10 @@ h3 {
 
 }
 
+.learn-something img {
+    width: 100%
+}
+
 .learn-something-text h2 {
     font-size: 4rem;
 
@@ -171,8 +175,8 @@ h3 {
     }
 
     .learn-something-text h2,
-    p,
-    a {
+    .learn-something-textp,
+    .learn-something-texta {
         width: 80%;
         max-width: 550px;
 
@@ -223,7 +227,7 @@ h3 {
 }
 
 .info a,
-p {
+.info p {
     margin: 8px 0;
 }
 
@@ -304,10 +308,12 @@ p {
         height: 500px;
         object-fit: cover;
     }
-    
+
     .infos {
-        margin-top: 16px;;
+        margin-top: 16px;
+        ;
     }
+
     .info {
         flex-direction: column;
         margin: 0 16px;
@@ -333,5 +339,97 @@ p {
 
     #desktop-quote-author {
         font-size: 1.25rem;
+    }
+}
+
+/* ---------- start learning ---------- */
+
+.start-learning {
+    background-color: hsl(0, 0%, 90%);
+    padding: 32px;
+}
+
+.start-learning h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.grid-container {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: hsl(0, 0%, 75%);
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+}
+
+.grid-item img,
+.grid-item h4,
+.grid-item p {
+    display: none;
+}
+
+.grid-item h3 {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 875px) {
+
+    .grid-item img,
+    .grid-item h4,
+    .grid-item p {
+        display: block;
+    }
+
+    .grid-item h3,
+    .grid-item h4,
+    .grid-item p {
+        margin: 8px 16px;
+    }
+
+    .start-learning {
+        background-color: hsl(0, 0%, 75%);
+        padding: 32px;
+    }
+
+    .grid-container {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        align-items: start;
+        gap: 32px;
+
+        width: 90%;
+        max-width: 900px;
+        margin: 32px auto;
+    }
+
+    .grid-item h3 {
+
+        margin-top: 16px;
+    }
+
+    .grid-item {
+        background-color: white;
+        height: 100%;
+        padding: 0;
+        width: 400px;
+    }
+
+    .grid-item img {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .grid-container {
+        grid-template: 1fr 1fr / 1fr  1fr 1fr;
     }
 }

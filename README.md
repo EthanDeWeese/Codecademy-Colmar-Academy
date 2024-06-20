@@ -1,3 +1,3 @@
-#Codecademy Colmar Academy Porject
+# Codecademy Colmar Academy Porject
 
 Practice for HTML and CSS
